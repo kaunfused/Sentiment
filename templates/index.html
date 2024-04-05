@@ -241,7 +241,7 @@
           var formData = new FormData();
           formData.append("file", csvFileInput.files[0]);
 
-          fetch("https://sentimentscanner-05jc.onrender.com/predict", {
+          fetch("https://sentiment-w5m0.onrender.com/predict", {
             method: "POST",
             body: formData,
           })
@@ -276,7 +276,7 @@
             });
         } else if (textInput.value.trim() !== "") {
           // Predict on single sentence
-          fetch("https://sentimentscanner-05jc.onrender.com/predict", {
+          fetch("https://sentiment-w5m0.onrender.com/predict", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
