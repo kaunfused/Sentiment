@@ -81,8 +81,7 @@ def single_prediction(predictor, scaler, cv, text_input):
     X_prediction_scl = scaler.transform(X_prediction)
     y_predictions = predictor.predict_proba(X_prediction_scl)
     y_predictions = y_predictions.argmax(axis=1)[0]
-
-    return "POSITIVE!" if y_predictions == 1 else "NEGATIVE"
+    return "POSITIVE! 😄" if y_predictions == 1 else "NEGATIVE! 😡"
 
 
 def bulk_prediction(predictor, scaler, cv, data):
